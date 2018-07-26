@@ -10,7 +10,7 @@ This model predicts the probability a driver will initiate an auto insurance cla
 
 [Background](#background)
 
-[Dependencies](#depend)
+[Requirements](#requirements)
 
 [How to Run](#run)
 
@@ -18,7 +18,15 @@ This model predicts the probability a driver will initiate an auto insurance cla
  
 ## Background <a name="background"/>
 
-## Dependencies <a name="depend"/>
+## Requirements <a name="requirements"/>
+
+1. Python 3 - https://www.python.org/getit/
+2. TensorFlow - https://www.tensorflow.org/install/
+3. Scikit-learn - http://scikit-learn.org/stable/install.html
+4. NumPy - https://www.scipy.org/scipylib/download.html
+5. Pandas - https://pandas.pydata.org/pandas-docs/stable/install.html
+6. Matplotlib - https://matplotlib.org/users/installing.html
+
 
 ## How to Run <a name="run"/>
 
