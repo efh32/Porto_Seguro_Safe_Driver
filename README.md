@@ -1,4 +1,4 @@
-### Porto Seguro Safe Driver Project
+# Porto Seguro Safe Driver Project
 
 ## Table of Contents
 
@@ -7,7 +7,7 @@
  
 
 <a name="descrip"/>
-## Project Description
+### Project Description
 
 This model predicts the probability a driver will initiate an auto insurance claim.  The data comes from the following Kaggle Competition: https://www.kaggle.com/c/porto-seguro-safe-driver-prediction. 
 
