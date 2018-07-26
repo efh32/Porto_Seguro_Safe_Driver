@@ -18,46 +18,6 @@ This model predicts the probability a driver will initiate an auto insurance cla
  
 ## Background <a name="background"/>
 
-## Requirements <a name="requirements"/>
-
-1. Python 3 - https://www.python.org/getit/
-2. TensorFlow - https://www.tensorflow.org/install/
-3. Scikit-learn - http://scikit-learn.org/stable/install.html
-4. NumPy - https://www.scipy.org/scipylib/download.html
-5. Pandas - https://pandas.pydata.org/pandas-docs/stable/install.html
-6. Matplotlib - https://matplotlib.org/users/installing.html
-
-
-## How to Run <a name="run"/>
-
-## License <a name="license"/>
-
-MIT License
-
-Copyright (c) [year] [fullname]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-
-
-
-
 
 1) Preprocess Data
 Files - explore_data.py, preprocess_data.py
@@ -142,3 +102,52 @@ The key to dealing with unbalanced data is using softmax because we need the dat
 Possible solution to deal with sparse columns
 
 https://www.tensorflow.org/tutorials/wide_and_deep
+
+
+## Requirements <a name="requirements"/>
+
+1. Python 3 - https://www.python.org/getit/
+2. TensorFlow - https://www.tensorflow.org/install/
+3. Scikit-learn - http://scikit-learn.org/stable/install.html
+4. NumPy - https://www.scipy.org/scipylib/download.html
+5. Pandas - https://pandas.pydata.org/pandas-docs/stable/install.html
+6. Matplotlib - https://matplotlib.org/users/installing.html
+
+
+## How to Run <a name="run"/>
+
+1. Download the software listed in the [requirements section](#requirements)
+
+2. Download the files from this repository.  Create a folder called "Data" located in the directory that contains the files downloaded from the repository.
+
+3. Download the data from the [Porto Seguro competition](https://www.kaggle.com/c/porto-seguro-safe-driver-prediction/data) and store the data in the "Data" folder.  
+
+4. 
+
+## License <a name="license"/>
+
+MIT License
+
+Copyright (c) [year] [fullname]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+
+
