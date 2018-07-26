@@ -4,7 +4,11 @@
 
 ## Table of Contents
 
-[Project Description](#descrip)  
+[Project Description](#descrip) 
+[Background](#background)
+[Dependencies](#depend)
+[How to use](#usage)
+[License](#license)
  
  
 
