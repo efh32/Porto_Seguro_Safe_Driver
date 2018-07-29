@@ -18,6 +18,12 @@ This model predicts the probability a driver will initiate an auto insurance cla
  
 ## Background <a name="background"/>
 
+[Additional Project Information](#additional)
+
+[File Information](#fileInfo)
+
+[Concepts](#concepts)
+
 
 1) Preprocess Data
 Files - explore_data.py, preprocess_data.py
@@ -122,7 +128,12 @@ https://www.tensorflow.org/tutorials/wide_and_deep
 
 3. Download the data from the [Porto Seguro competition](https://www.kaggle.com/c/porto-seguro-safe-driver-prediction/data) and store the data in the "Data" folder.  
 
-4. 
+4. Run the explore_data.py file in your IDE or terminal.  Be sure to uncomment and change line 17 so that the path to the directory that contains the Kaggle data is the argument in the os.chdir function.
+```python
+#os.chdir('path to directory containing downloaded data')
+
+```
+5. 
 
 ## License <a name="license"/>
 
