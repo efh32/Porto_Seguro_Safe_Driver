@@ -21,32 +21,39 @@ This model predicts the probability a driver will initiate an auto insurance cla
 [Additional Project Information](#additional)
 
 [File Information](#fileInfo)
-
+ 
 [Concepts](#concepts)
 
+### Additional Project Information <a name="additional"/>
 
-1) Preprocess Data
-Files - explore_data.py, preprocess_data.py
+### File Information <a name="fileInfo"/>
 
-explore_data.py - Found in Model-2
-  1) Reads the raw train data and raw test data.  (Files from the competition)
-  2) Drops columns that have too many missing values.  
-  3) Imputes missing values with sklearn.preprocessing Imputer.  Replaces missing categorical data with the column mode.  Replaces missing continous data with the column mean.
-  4) I divided the columns by label.  I checked each column to see whether the distributions of the column are similar.  If the distributions of the columns are too similar, I remove the column.
-  5) Checked the distributions of each column in test and train data.  If the test data and train data distribution differed, we remove the column.  The column would not train a good model if the test data and train data differed too much in distribution.  In this case, all were similar between the test data and train data.
-  6) Writes out the preprocessed train and test data.
-  
-Links:
-  1) Imputer example - https://machinelearningmastery.com/handle-missing-data-python/
-  2) Visual example of choosing which columns to remove - https://github.com/Currie32/Predicting-Credit-Card-Fraud/blob/master/Predicting_Credit_Card_Fraud.ipynb
-  
+1. explore_data.py - initial preprocessing of the data
+⋅⋅* Reads the raw train data and raw test data.  (Files from the competition)
+⋅⋅* Removes features that have too many missing values.
+⋅⋅* Imputes missing values with sklearn.preprocessing Imputer.  Replaces missing categorical data with the feature's mode.  Replaces missing continous data with the feature's mean.
+⋅⋅* A feature is removed if the distributions are too similar between the two classes (claim and no claim).
+⋅⋅* Checked the distributions of each column in test and train data.  If the test data and train data distribution differed, we remove the column.  The column would not train a good model if the test data and train data differed too much in distribution.  In this case, all were similar between the test data and train data.
+⋅⋅* Writes out the preprocessed train and test data
 
-preprocess_data.py - Found in Model-2
+2. preprocess_data.py - Found in Model-2
   1) Reads the train data (From the competition). 
   2) Creates training data and testing data For the model.  The training data is 80% of the original train data.  The testing data is the remaining 20% of the original train data.
   3) Writes the training data and testing data to csv files.
   4) Creates an augmented training set.  We take 400,000 data points from training data that have a label of 0.  We use resample from sklearn to increase the number of data that is labeled 1.  What we increase the number of times each data point that has a label of 1 shows up until it is balanced with the data that has a label of 0.  This is how we deal with class imbalance.
   5) Write out the autmented training data.
+
+
+### Concepts <a name="concepts"/>
+
+1) Preprocess Data
+Files - explore_data.py, preprocess_data.py
+ 
+
+  
+
+  
+
 
 It is important to note that we are training the wide and deep model with the augmented training set.  The original training set we created still has a use to us.  We can use it as kind of a testing set for our model.  We have to make sure the increase in the data with a label of 1 does not overfitt the data.  
 
