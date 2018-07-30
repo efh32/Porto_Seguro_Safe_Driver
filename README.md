@@ -30,15 +30,10 @@ This model predicts the probability a driver will initiate an auto insurance cla
 
 1. explore_data.py - initial preprocessing of the data
   * Reads the raw train data and raw test data.  (Files from the competition)
-
   * Removes features that have too many missing values.
-
   * Imputes missing values with sklearn.preprocessing Imputer.  Replaces missing categorical data with the feature's mode.  Replaces missing continous data with the feature's mean.
-
   * A feature is removed if the distributions are too similar between the two classes (claim and no claim).
-
   * Checks the distributions of each column in test and train data.  If the test data and train data distribution differ the column is removed.  
-
   * Writes out the preprocessed train and test data
 
 2. preprocess_data.py - Found in Model-2
