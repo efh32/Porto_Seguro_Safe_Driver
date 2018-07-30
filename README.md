@@ -35,7 +35,6 @@ This model predicts the probability a driver will initiate an auto insurance cla
   * A feature is removed if the distributions are too similar between the two classes (claim and no claim).
   * Checks the distributions of each column in test and train data.  If the test data and train data distribution differ the column is removed.  
   * Writes out the preprocessed train and test data
-
 2. preprocess_data.py - Found in Model-2
   1) Reads the train data (From the competition). 
   2) Creates training data and testing data For the model.  The training data is 80% of the original train data.  The testing data is the remaining 20% of the original train data.
