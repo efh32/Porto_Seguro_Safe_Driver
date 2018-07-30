@@ -29,7 +29,6 @@ This model predicts the probability a driver will initiate an auto insurance cla
 ### File Information <a name="fileInfo"/>
 
 1. explore_data.py - initial preprocessing of the data
-
 * Reads the raw train data and raw test data.  (Files from the competition)
 
 * Removes features that have too many missing values.
