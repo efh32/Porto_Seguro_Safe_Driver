@@ -36,11 +36,11 @@ This model predicts the probability a driver will initiate an auto insurance cla
     * Checks the distributions of each column in test and train data.  If the test data and train data distribution differ the column is removed.    
     * Writes out the preprocessed train and test data.  
 2. preprocess_data.py - Found in Model-2
-  1) Reads the train data (From the competition). 
-  2) Creates training data and testing data For the model.  The training data is 80% of the original train data.  The testing data is the remaining 20% of the original train data.
-  3) Writes the training data and testing data to csv files.
-  4) Creates an augmented training set.  We take 400,000 data points from training data that have a label of 0.  We use resample from sklearn to increase the number of data that is labeled 1.  What we increase the number of times each data point that has a label of 1 shows up until it is balanced with the data that has a label of 0.  This is how we deal with class imbalance.
-  5) Write out the autmented training data.
+    * Reads the preprocessed data created by explore_data.py. 
+    * Creates training data and testing data for the model.  The training data contains 80% of the original train data.  The testing data contains the remaining 20% of the original train data.
+    * Writes the training data and testing data to csv files.
+    * Creates an augmented training set.  Takes 400,000 data points from training data that have a label of 0. Resamples data that have a label of 1 to 400,000.  This results in a balanced training set.  
+    * Write out the autmented training data.
 
 
 ### Concepts <a name="concepts"/>
