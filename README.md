@@ -35,13 +35,15 @@ This model predicts the probability a driver will initiate an auto insurance cla
     * A feature is removed if the distributions are too similar between the two classes (claim and no claim).  
     * Checks the distributions of each column in test and train data.  If the test data and train data distribution differ the column is removed.    
     * Writes out the preprocessed train and test data.  
-2. preprocess_data.py - Found in Model-2
+2. preprocess_data.py - augments data to fix class balance issue
     * Reads the preprocessed data created by explore_data.py. 
     * Creates training data and testing data for the model.  The training data contains 80% of the original train data.  The testing data contains the remaining 20% of the original train data.
     * Writes the training data and testing data to csv files.
     * Creates an augmented training set.  Takes 400,000 data points from training data that have a label of 0. Resamples data that have a label of 1 to 400,000.  This results in a balanced training set.  
     * Write out the autmented training data.
-
+3. train_wide_and_deep.py - trains a TensorFlow model from the augmented training data.  The checkpoints are saved after the epoch.  This file may be run more than once. 
+4. w_n_d_predict.py - produces a prediction for the testing data.  The higher the probability, the more likely the model believes the data is a claim.  
+5. boosting_preprocess.py - creates new training data.  Removes data that have a prediction of below 0.5.  This new training data is used to perform further training for the model. 
 
 ### Concepts <a name="concepts"/>
 
