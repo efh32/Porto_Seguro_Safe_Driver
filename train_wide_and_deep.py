@@ -236,18 +236,18 @@ def maybe_download(train_data, test_data, train2_data=""):
   if train_data:
     train_file_name = train_data
   else:
-    train_file_name = "training_data_2.csv"
+    train_file_name = "training_data.csv"
 
   if test_data:
     test_file_name = test_data
   else:
     #test_file_name = "./data/test-1.csv"
-    test_file_name = "testing_data_2.csv"
+    test_file_name = "testing_data.csv"
     
   if train2_data:
     train2_file_name = train2_data
   else:
-    train2_file_name = "training_data_augmented_2.csv"
+    train2_file_name = "training_data_augmented.csv"
     #test_file_name = "./data/train-1.csv"
 
   return train_file_name, test_file_name, train2_file_name
