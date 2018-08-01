@@ -79,7 +79,36 @@ The submissions are evaluated using the Normalized Gini Coefficient and the prob
 ```
 5. Run the preprocess_data.py file in your IDE or terminal.
 
-6. 
+6. Run train_wide_and_deep.py. 
+
+6. (optional) Run the boosting_preprocess.py file.
+
+7. (optional) Run train_wide_and_deep.py again.  Be sure to change the function found in lines 234 to 253 into the following:
+```python
+def maybe_download(train_data, test_data, train2_data=""):
+  """Maybe downloads training data and returns train and test file names."""
+  if train_data:
+    train_file_name = train_data
+  else:
+    train_file_name = "training_data_2.csv"
+
+  if test_data:
+    test_file_name = test_data
+  else:
+    #test_file_name = "./data/test-1.csv"
+    test_file_name = "testing_data_2.csv"
+    
+  if train2_data:
+    train2_file_name = train2_data
+  else:
+    train2_file_name = "training_data_augmented_2.csv"
+    #test_file_name = "./data/train-1.csv"
+    
+  return train_file_name, test_file_name, train2_file_name
+```
+note that the file names were changed to match the files created by boosting_preprocess.py.
+
+8. Run w_n_d_predicty.py.  
 
 ## License <a name="license"/>
 
